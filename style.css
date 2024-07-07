@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,500..800;1,500..800&display=swap');
+
+:root {
+    --primary-color: hsl(47, 88%, 63%);
+    --neutral-white: hsl(0, 0%, 100%);
+    --neutral-grey: hsl(0, 0%, 50%);
+    --neutral-black: hsl(0, 0%, 7%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Figtree', sans-serif;
+    background: var(--primary-color);
+}
+
+body p {
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+    font-weight: 500;
+    color: var(--neutral-grey);
+}
+
+body h2 {
+    font-size: 0.8rem;
+    font-weight: 800;
+    margin: 5px 10px;
+}
+
+.container {
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+    margin: 0 1rem;
+    /* Adds space on left and right side on mobile screens */
+}
+
+.content {
+    background: var(--neutral-white);
+    border: 2px solid var(--neutral-black);
+    border-radius: 15px;
+    box-shadow: 7px 7px 0px var(--neutral-black);
+    margin: 0 auto;
+    padding: 10px;
+    height: auto;
+    max-width: 320px;
+}
+
+.main-section {
+    padding: 10px;
+}
+
+.main-section img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.subheader-container {
+    background: var(--primary-color);
+    border-radius: 5px;
+    width: fit-content;
+    margin: 15px 0px;
+}
+
+.subheader-container h2 {
+    padding: 5px;
+}
+
+.main-section h1 {
+    font-size: 1.3rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.main-section h1:hover {
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+.main-section h3 {
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin: 10px 0px 20px 0px;
+}
+
+.author-section {
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    /* justify-content: center; */
+}
+
+.author-section img {
+    max-width: 12%;
+}
+
+.author-section h2 {
+    padding-top: 5px;
+}
+
+.attribution {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.7rem;
+    text-align: center;
+    padding: 10px;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
